@@ -24,6 +24,6 @@ public class Palindrome {
             left++;
             right--;
         }
-        System.out.println(" Palindrome");
+        System.out.println("Palindrome");
     }
 }

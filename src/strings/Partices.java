@@ -1,8 +1,7 @@
 package strings;
 
-import java.util.HashSet;
-import java.util.Optional;
-import java.util.Set;
+import java.util.*;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 
@@ -42,9 +41,16 @@ public class Partices {
                     .filter(ch -> !seen.add(ch)).findFirst();
         firstRepeated.ifPresent(System.out::println);
 
-
-
-
+        //Sreams hands-on CAT, TAC, DON, NOD, TELL count frequency, as cat and tac have same character so consider same.
+        List<String> sameFre = Arrays.asList("CAT", "TAC", "DON", "NOD", "TELL");
+         sameFre.stream().collect(Collectors.groupingBy(ch ->
+                        {
+                            char[] characters = ch.toCharArray();
+                            Arrays.sort(characters);
+                            return new String(characters);
+                        },
+                        Collectors.counting())
+        ).entrySet().stream().forEach(ch -> System.out.println(ch.getKey() + "is value of "+ ch.getValue()));
 
 
     }

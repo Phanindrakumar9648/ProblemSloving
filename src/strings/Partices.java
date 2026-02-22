@@ -44,13 +44,13 @@ public class Partices {
         //Sreams hands-on CAT, TAC, DON, NOD, TELL count frequency, as cat and tac have same character so consider same.
         List<String> sameFre = Arrays.asList("CAT", "TAC", "DON", "NOD", "TELL");
          sameFre.stream().collect(Collectors.groupingBy(ch ->
-                        {
-                            char[] characters = ch.toCharArray();
-                            Arrays.sort(characters);
-                            return new String(characters);
-                        },
-                        Collectors.counting())
-        ).entrySet().stream().forEach(ch -> System.out.println(ch.getKey() + "is value of "+ ch.getValue()));
+                         {
+                             char[] characters = ch.toCharArray();
+                             Arrays.sort(characters);
+                             return new String(characters);
+                         },
+                         Collectors.counting())
+         ).forEach((key, value) -> System.out.println(key + "is value of " + value));
 
 
     }

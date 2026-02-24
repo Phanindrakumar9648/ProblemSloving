@@ -68,5 +68,10 @@ public class Partices {
                     .map(list -> list.get(0))
                     .forEach(ch -> System.out.println(ch +" are Anagaram"));
 
+            //Sum of all digits in a number
+            int i = 15623;
+                Integer sumOfDigits = Arrays.stream(String.valueOf(i).split(""))
+                        .mapToInt(Integer::parseInt).sum();
+            System.out.println(sumOfDigits);
     }
 }

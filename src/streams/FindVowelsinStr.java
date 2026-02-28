@@ -1,6 +1,5 @@
 package streams;
 
-import java.util.Locale;
 import java.util.stream.IntStream;
 
 public class FindVowelsinStr {

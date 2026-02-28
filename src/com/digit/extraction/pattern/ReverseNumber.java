@@ -1,6 +1,5 @@
 package com.digit.extraction.pattern;
 
-import java.awt.desktop.SystemEventListener;
 import java.util.Scanner;
 
 public class ReverseNumber {

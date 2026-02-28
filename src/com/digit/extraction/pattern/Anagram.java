@@ -1,7 +1,7 @@
 package com.digit.extraction.pattern;
 
-import java.sql.SQLOutput;
-import java.util.*;
+import java.util.HashMap;
+import java.util.Locale;
 
 public class Anagram {
 

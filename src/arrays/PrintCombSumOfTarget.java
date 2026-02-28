@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static java.util.Arrays.stream;
-
 public class PrintCombSumOfTarget {
 
     public static void main(String[] args) {

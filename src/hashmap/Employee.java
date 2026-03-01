@@ -5,6 +5,15 @@ public class Employee {
     private double salary;
     private String department;
 
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", salary=" + salary +
+                ", department='" + department + '\'' +
+                '}';
+    }
+
     public Employee(String name, double salary, String department) {
         this.name = name;
         this.salary = salary;

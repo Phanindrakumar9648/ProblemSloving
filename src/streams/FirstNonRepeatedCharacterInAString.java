@@ -1,10 +1,8 @@
 package streams;
 
 import java.util.LinkedHashMap;
-import java.util.Locale;
 import java.util.Map;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 public class FirstNonRepeatedCharacterInAString {
 

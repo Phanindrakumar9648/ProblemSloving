@@ -1,0 +1,4 @@
+SELECT *
+FROM employees
+WHERE email IS NULL
+   OR email = '';

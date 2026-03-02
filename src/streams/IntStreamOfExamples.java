@@ -1,6 +1,5 @@
 package streams;
 
-import java.sql.SQLOutput;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;

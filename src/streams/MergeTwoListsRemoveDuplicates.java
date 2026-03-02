@@ -1,9 +1,7 @@
 package streams;
 
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
-import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class MergeTwoListsRemoveDuplicates {

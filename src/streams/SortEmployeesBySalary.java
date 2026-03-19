@@ -3,6 +3,7 @@ package streams;
 import hashmap.Employee;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -18,8 +19,9 @@ public class SortEmployeesBySalary {
                         new Employee("Mery", 70000, "HR")
                 );
 
-        String collect = employees.stream().map(Employee::getSalary)
-                .map(sal -> String.valueOf(sal))
+        String collect  =   employees.stream()
+                .sorted(Comparator.comparing(Employee::getSalary))
+                .map(emp -> String.valueOf(emp.getSalary()))
                 .collect(Collectors.joining(","));
         System.out.println(collect);
 
